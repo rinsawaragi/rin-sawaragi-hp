@@ -60,6 +60,6 @@ test("keeps replaceable content in a single data definition", async () => {
     data,
     /worksPlaylist:\s*"https:\/\/www\.youtube\.com\/playlist\?list=PLRrpTfiKh0qY"/,
   );
-  assert.match(data, /deliveryTime: "約○〜○週間"/);
+  assert.match(data, /deliveryTime: "約2〜4週間"/);
   assert.doesNotMatch(client, /Profile|About|NEWS|Coming Soon/);
 });

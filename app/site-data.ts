@@ -102,7 +102,7 @@ export const siteData = {
         "作詞・作曲に関する著作権の譲渡または完全買い切りをご希望の場合に、利用範囲や条件に応じて個別にお見積もりします。",
     },
   ],
-  deliveryTime: "約○〜○週間",
+  deliveryTime: "約2〜4週間",
   flow: [
     {
       title: "お問い合わせ",
