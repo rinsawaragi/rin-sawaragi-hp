@@ -63,3 +63,12 @@ test("keeps replaceable content in a single data definition", async () => {
   assert.match(data, /deliveryTime: "約2〜4週間"/);
   assert.doesNotMatch(client, /Profile|About|NEWS|Coming Soon/);
 });
+
+test("lets FAQ answers use the available content width", async () => {
+  const css = await readFile(
+    new URL("../app/globals.css", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(css, /\.faq-answer\s*\{[^}]*max-width:\s*none;/s);
+});
